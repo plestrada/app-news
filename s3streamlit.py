@@ -11,6 +11,8 @@ from skllm.models.gpt.text2text.summarization import GPTSummarizer
 from skllm.models.gpt.classification.zero_shot import ZeroShotGPTClassifier
 from openai import OpenAI
 
+nltk.download('punkt')
+
 ###
 api_key = st.secrets['api_key']
 SKLLMConfig.set_openai_key(api_key)
